@@ -46,8 +46,8 @@ export default function LeaderboardTable({ leaderboard }) {
             field: 'Nom',
         },
         {
-            title: 'Demolitions',
-            field: 'Demolitions',
+            title: 'Démolitions',
+            field: 'Démolitions',
             defaultSort: 'desc',
             render: (data) => {
                 return data.Demolitions.toLocaleString();
@@ -73,7 +73,7 @@ export default function LeaderboardTable({ leaderboard }) {
         },
         {
             title: 'Pays',
-            field: 'Pys'
+            field: 'Pays'
         },
         {
             title: 'Dernière mise à jour',
@@ -112,7 +112,7 @@ export default function LeaderboardTable({ leaderboard }) {
     };
 
     return <MaterialTable
-        title={"Classement des démolitions francophone"}
+        title={"Classement des démolitions francophones"}
         data={players}
         columns={columns}
         options={options}
