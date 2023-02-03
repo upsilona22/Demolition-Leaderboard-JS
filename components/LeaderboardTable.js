@@ -42,8 +42,8 @@ export default function LeaderboardTable({ leaderboard }) {
 
     let columns = [
         {
-            title: 'Name',
-            field: 'Name',
+            title: 'Nom',
+            field: 'Nom',
         },
         {
             title: 'Demolitions',
@@ -54,8 +54,8 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Demolitions Rank',
-            field: 'DemolitionsRank',
+            title: 'Rang démolitions',
+            field: 'Rang démolitions',
             defaultSort: 'asc'
         },
         {
@@ -67,24 +67,24 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Exterminations Rank',
-            field: 'ExterminationsRank',
+            title: 'Rang exterminations',
+            field: 'Rang exterminations',
             defaultSort: 'asc'
         },
         {
-            title: 'Country',
-            field: 'Country'
+            title: 'Pays',
+            field: 'Pys'
         },
         {
-            title: 'Last Update',
-            field: 'Last Update',
+            title: 'Dernière mise à jour',
+            field: 'Dernière mise à jour',
             defaultSort: 'asc'
         },
     ];
 
     const options = {
         thirdSortClick: false,
-        idSynonym: "Name",
+        idSynonym: "Nom",
         pageSize: 25,
         pageSizeOptions: [10, 15, 25, 50, 100],
         showTitle: false,
@@ -112,7 +112,7 @@ export default function LeaderboardTable({ leaderboard }) {
     };
 
     return <MaterialTable
-        title={"Demolition Leaderboard"}
+        title={"Classement des démolitions francophone"}
         data={players}
         columns={columns}
         options={options}
