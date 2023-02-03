@@ -17,15 +17,7 @@ export default function Home({leaderboard, totals, time}) {
           Rejoignez le classement sur le discord <a href="https://discord.gg/HVuU3QEC">
             https://discord.gg/HVuU3QEC</a>
         </p>
-        <p>
-          Collectively, {totals.players.toLocaleString()} members have 
-          demolished {totals.demos.toLocaleString()} unsuspecting players, 
-          leading to {totals.exterms.toLocaleString()} exterminations
-        </p>
-        <p>
-          Victims have waited a total of {time.days} days, {time.hours} hours, {time.minutes} minutes, 
-          and {time.seconds} seconds  to respawn
-        </p>
+      
         
       </main>
       <LeaderboardTable leaderboard={leaderboard}/>
