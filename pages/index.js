@@ -14,7 +14,7 @@ export default function Home({leaderboard, totals, time}) {
       <main>
         <Header title="Bienvenue sur le classement des démolitions francophones!" />
         <p className="description">
-          Rejoignez le classement sur le discord <a href="https://discord.gg/HVuU3QEC">
+          Rejoignez le classement en effectuant la demande sur le discord <a href="https://discord.gg/HVuU3QEC">
             https://discord.gg/HVuU3QEC</a>
         </p>
       
