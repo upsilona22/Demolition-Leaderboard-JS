@@ -44,12 +44,12 @@ export default function PlayerHistoryPanel({ rowData }) {
                 }
             } else {
                 return {
-                    backgroundColor: "#F8F8F8",
+                    backgroundColor: "#FFC8D3",
                 }
             }
         },
         headerStyle: {
-            backgroundColor: '#F8F8F8',
+            backgroundColor: '#FFC8D3',
         },
         detailPanelType: "single",
         draggable: false,
