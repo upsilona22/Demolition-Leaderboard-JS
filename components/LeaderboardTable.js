@@ -11,12 +11,12 @@ export default function LeaderboardTable({ leaderboard }) {
         let playerDemos = parseInt(playerData["Demolitions"]);
         let playerExterms = parseInt(playerData["Exterminations"]);
         let newPlayer = {
-            "Name": playerData["Name"],
+            "Nom": playerData["Name"],
             "Demolitions": playerDemos,
             "Exterminations": playerExterms,
-            "Last Update": dateString,
-            "Country": playerData.Country,
-            "History": playerData.History
+            "Dernière mise à jour": dateString,
+            "Pays": playerData.Country,
+            "Historique": playerData.History
         }
         players.push(newPlayer);
     }
