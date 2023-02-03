@@ -95,16 +95,16 @@ export default function LeaderboardTable({ leaderboard }) {
         rowStyle: (data, index, level) => {
             if (index % 2 == 0) {
                 return {
-                    backgroundColor: "#323cc9",
+                    backgroundColor: "#fffff",
                 }
             } else {
                 return {
-                    backgroundColor: "#323cc9",
+                    backgroundColor: "#e8e8e8",
                 }
             }
         },
         headerStyle: {
-            backgroundColor: '#323cc9',
+            backgroundColor: '#e8e8e8',
         },
         detailPanelType: "single",
         columnsButton: true,
