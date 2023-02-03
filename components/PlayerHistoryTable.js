@@ -40,7 +40,7 @@ export default function PlayerHistoryPanel({ rowData }) {
         rowStyle: (data, index, level) => {
             if (index % 2 == 0) {
                 return {
-                    backgroundColor: "#FFFFFF",
+                    backgroundColor: "#FFC8D3",
                 }
             } else {
                 return {
