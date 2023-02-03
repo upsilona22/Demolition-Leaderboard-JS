@@ -17,7 +17,15 @@ export default function Home({leaderboard, totals, time}) {
           Rejoignez le classement en effectuant la demande sur le discord <a href="https://discord.gg/HVuU3QEC">
             https://discord.gg/HVuU3QEC</a>
         </p>
-      
+        <p>
+          Collectively, {totals.players.toLocaleString()} members have 
+          demolished {totals.demos.toLocaleString()} unsuspecting players, 
+          leading to {totals.exterms.toLocaleString()} exterminations
+        </p>
+        <p>
+          Victims have waited a total of {time.days} days, {time.hours} hours, {time.minutes} minutes, 
+          and {time.seconds} seconds  to respawn
+        </p>
         
       </main>
       <LeaderboardTable leaderboard={leaderboard}/>
@@ -27,7 +35,7 @@ export default function Home({leaderboard, totals, time}) {
 
 export async function getStaticProps(context) {
   let leaderboard = 
-    await fetch("https://classementdemolitionsfrancophone.netlify.app/.netlify/functions/downloadData")
+    await fetch("https://demolition-leaderboard.netlify.app/.netlify/functions/downloadData")
       .then(function(response) {
         if (response.status >= 400) {
           console.log(response);
