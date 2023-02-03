@@ -12,10 +12,10 @@ export default function Home({leaderboard, totals, time}) {
       </Head>
 
       <main>
-        <Header title="Welcome to the Demolition Leaderboard!" />
+        <Header title="Bienvenue sur le classement des démolitions francophones!" />
         <p className="description">
-          Join the leaderboard on the Discord <a href="https://discord.gg/bSNhUbQ">
-            https://discord.gg/bSNhUbQ</a>
+          Rejoignez le classement sur le discord <a href="https://discord.gg/HVuU3QEC">
+            https://discord.gg/HVuU3QEC</a>
         </p>
         <p>
           Collectively, {totals.players.toLocaleString()} members have 
@@ -35,7 +35,7 @@ export default function Home({leaderboard, totals, time}) {
 
 export async function getStaticProps(context) {
   let leaderboard = 
-    await fetch("https://demolition-leaderboard.netlify.app/.netlify/functions/downloadData")
+    await fetch("https://classementdemolitionsfrancophone.netlify.app/.netlify/functions/downloadData")
       .then(function(response) {
         if (response.status >= 400) {
           console.log(response);
