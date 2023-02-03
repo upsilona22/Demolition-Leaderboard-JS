@@ -85,7 +85,7 @@ export default function LeaderboardTable({ leaderboard }) {
     const options = {
         thirdSortClick: false,
         idSynonym: "Nom",
-        pageSize: 25,
+        pageSize: 50,
         pageSizeOptions: [10, 15, 25, 50, 100],
         showTitle: false,
         padding: "dense",
