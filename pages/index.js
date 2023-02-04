@@ -18,13 +18,12 @@ export default function Home({leaderboard, totals, time}) {
             https://discord.gg/HVuU3QEC</a>
         </p>
         <p>
-          Collectively, {totals.players.toLocaleString()} members have 
-          demolished {totals.demos.toLocaleString()} unsuspecting players, 
-          leading to {totals.exterms.toLocaleString()} exterminations
+          Collectivement les, {totals.players.toLocaleString()} joueurs ont démolis {totals.demos.toLocaleString()} joueurs, 
+          amenant à de {totals.exterms.toLocaleString()} exterminations
         </p>
         <p>
-          Victims have waited a total of {time.days} days, {time.hours} hours, {time.minutes} minutes, 
-          and {time.seconds} seconds  to respawn
+          Nombre de victimes atteint en {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
+          et {time.seconds} secondes
         </p>
         
       </main>
