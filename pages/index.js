@@ -18,8 +18,8 @@ export default function Home({leaderboard, totals, time}) {
             https://discord.gg/HVuU3QEC</a>
         </p>
         <p>
-          Collectivement les, {totals.players.toLocaleString()} joueurs ont démolis {totals.demos.toLocaleString()} joueurs, 
-          amenant à de {totals.exterms.toLocaleString()} exterminations
+          Collectivement les {totals.players.toLocaleString()} joueurs ont démolis {totals.demos.toLocaleString()} joueurs, 
+          amenant à un total de {totals.exterms.toLocaleString()} exterminations
         </p>
         <p>
           Nombre de victimes atteint en {time.days} jours, {time.hours} heures, {time.minutes} minutes, 
