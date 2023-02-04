@@ -11,7 +11,7 @@ export default function LeaderboardTable({ leaderboard }) {
         let playerDemos = parseInt(playerData["Demolitions"]);
         let playerExterms = parseInt(playerData["Exterminations"]);
         let newPlayer = {
-            "Nom": playerData["Nom"],
+            "Name": playerData["Name"],
             "Demolitions": playerDemos,
             "Exterminations": playerExterms,
             "Last Update": dateString,
@@ -46,7 +46,7 @@ export default function LeaderboardTable({ leaderboard }) {
             field: 'Name',
         },
         {
-            title: 'Demolitions',
+            title: 'Démolitions',
             field: 'Demolitions',
             defaultSort: 'desc',
             render: (data) => {
