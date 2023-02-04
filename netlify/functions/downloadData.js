@@ -1,7 +1,3 @@
-const fetch = require('isomorphic-fetch');
-const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({accessToken: process.env.dropToken, fetch: fetch});
-
 exports.handler = async function(event, context) {
     try {
         const response = await dbx.filesDownload({path: "/leaderboard.json"});
