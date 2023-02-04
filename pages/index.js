@@ -7,7 +7,7 @@ export default function Home({leaderboard, totals, time}) {
   return (
     <div className="container">
       <Head>
-        <title>Demolition Leaderboard</title>
+        <title>Classement démolitions</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
