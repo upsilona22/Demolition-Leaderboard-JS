@@ -54,7 +54,7 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Demolitions Rank',
+            title: 'Rang démolitions',
             field: 'DemolitionsRank',
             defaultSort: 'asc'
         },
@@ -67,16 +67,16 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Exterminations Rank',
+            title: 'Rang exterminations',
             field: 'ExterminationsRank',
             defaultSort: 'asc'
         },
         {
-            title: 'Country',
+            title: 'pays',
             field: 'Country'
         },
         {
-            title: 'Last Update',
+            title: 'Dernière MAJ',
             field: 'Last Update',
             defaultSort: 'asc'
         },
