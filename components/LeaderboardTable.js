@@ -11,18 +11,18 @@ export default function LeaderboardTable({ leaderboard }) {
         let playerDemos = parseInt(playerData["Demolitions"]);
         let playerExterms = parseInt(playerData["Exterminations"]);
         let newPlayer = {
-            "Nom": playerData["Name"],
-            "Démolitions": playerDemos,
+            "Name": playerData["Name"],
+            "Demolitions": playerDemos,
             "Exterminations": playerExterms,
-            "Dernière MAJ": dateString,
-            "Pays": playerData.Country,
-            "Historique": playerData.History
+            "Last Update": dateString,
+            "Country": playerData.Country,
+            "History": playerData.History
         }
         players.push(newPlayer);
     }
 
     players.sort((a, b) => {
-        return b.Démolitions - a.Démolitions;
+        return b.Demolitions - a.Demolitions;
     })
 
     let i = 1;
@@ -42,11 +42,11 @@ export default function LeaderboardTable({ leaderboard }) {
 
     let columns = [
         {
-            title: 'Nom',
+            title: 'Name',
             field: 'Name',
         },
         {
-            title: 'Démolitions',
+            title: 'Demolitions',
             field: 'Demolitions',
             defaultSort: 'desc',
             render: (data) => {
@@ -54,7 +54,7 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Démolitions Rang',
+            title: 'Demolitions Rank',
             field: 'DemolitionsRank',
             defaultSort: 'asc'
         },
@@ -67,16 +67,16 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Exterminations Rang',
+            title: 'Exterminations Rank',
             field: 'ExterminationsRank',
             defaultSort: 'asc'
         },
         {
-            title: 'Pays',
+            title: 'Country',
             field: 'Country'
         },
         {
-            title: 'dernière mise à jour',
+            title: 'Last Update',
             field: 'Last Update',
             defaultSort: 'asc'
         },
