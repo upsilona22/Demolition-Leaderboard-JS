@@ -42,7 +42,7 @@ export default function LeaderboardTable({ leaderboard }) {
 
     let columns = [
         {
-            title: 'Name',
+            title: 'Nom',
             field: 'Name',
         },
         {
