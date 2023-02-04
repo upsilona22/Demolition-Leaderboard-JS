@@ -12,9 +12,9 @@ export default function LeaderboardTable({ leaderboard }) {
         let playerExterms = parseInt(playerData["Exterminations"]);
         let newPlayer = {
             "Nom": playerData["Name"],
-            "Demolitions": playerDemos,
+            "Démolitions": playerDemos,
             "Exterminations": playerExterms,
-            "Dernière mise à jour": dateString,
+            "Dernière MAJ": dateString,
             "Pays": playerData.Country,
             "Historique": playerData.History
         }
@@ -22,7 +22,7 @@ export default function LeaderboardTable({ leaderboard }) {
     }
 
     players.sort((a, b) => {
-        return b.Demolitions - a.Demolitions;
+        return b.Démolitions - a.Démolitions;
     })
 
     let i = 1;
@@ -43,19 +43,19 @@ export default function LeaderboardTable({ leaderboard }) {
     let columns = [
         {
             title: 'Nom',
-            field: 'Nom',
+            field: 'Name',
         },
         {
             title: 'Démolitions',
-            field: 'Démolitions',
+            field: 'Demolitions',
             defaultSort: 'desc',
             render: (data) => {
                 return data.Demolitions.toLocaleString();
             }
         },
         {
-            title: 'Rang démolitions',
-            field: 'Rang démolitions',
+            title: 'Démolitions Rang',
+            field: 'DemolitionsRank',
             defaultSort: 'asc'
         },
         {
@@ -67,25 +67,25 @@ export default function LeaderboardTable({ leaderboard }) {
             }
         },
         {
-            title: 'Rang exterminations',
-            field: 'Rang exterminations',
+            title: 'Exterminations Rang',
+            field: 'ExterminationsRank',
             defaultSort: 'asc'
         },
         {
             title: 'Pays',
-            field: 'Pays'
+            field: 'Country'
         },
         {
-            title: 'Dernière mise à jour',
-            field: 'Dernière mise à jour',
+            title: 'dernière mise à jour',
+            field: 'Last Update',
             defaultSort: 'asc'
         },
     ];
 
     const options = {
         thirdSortClick: false,
-        idSynonym: "Nom",
-        pageSize: 50,
+        idSynonym: "Name",
+        pageSize: 25,
         pageSizeOptions: [10, 15, 25, 50, 100],
         showTitle: false,
         padding: "dense",
@@ -95,16 +95,16 @@ export default function LeaderboardTable({ leaderboard }) {
         rowStyle: (data, index, level) => {
             if (index % 2 == 0) {
                 return {
-                    backgroundColor: "#fffff",
+                    backgroundColor: "#FFFFFF",
                 }
             } else {
                 return {
-                    backgroundColor: "#e8e8e8",
+                    backgroundColor: "#F8F8F8",
                 }
             }
         },
         headerStyle: {
-            backgroundColor: '#e8e8e8',
+            backgroundColor: '#F8F8F8',
         },
         detailPanelType: "single",
         columnsButton: true,
@@ -112,7 +112,7 @@ export default function LeaderboardTable({ leaderboard }) {
     };
 
     return <MaterialTable
-        title={"Classement des démolitions francophones"}
+        title={"Demolition Leaderboard"}
         data={players}
         columns={columns}
         options={options}
