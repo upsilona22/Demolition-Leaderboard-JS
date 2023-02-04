@@ -34,7 +34,7 @@ export default function Home({leaderboard, totals, time}) {
 
 export async function getStaticProps(context) {
   let leaderboard = 
-    await fetch("https://classementdemolitionsfrancophone.netlify.app/.netlify/functions/downloadData")
+    await import leaderboard.json
       .then(function(response) {
         if (response.status >= 400) {
           console.log(response);
