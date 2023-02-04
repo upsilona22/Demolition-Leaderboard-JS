@@ -34,7 +34,7 @@ export default function Home({leaderboard, totals, time}) {
 
 export async function getStaticProps(context) {
   let leaderboard = 
-    await import leaderboard.json
+    await fetch leaderboard.json
       .then(function(response) {
         if (response.status >= 400) {
           console.log(response);
