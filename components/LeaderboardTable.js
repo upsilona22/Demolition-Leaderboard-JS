@@ -72,7 +72,7 @@ export default function LeaderboardTable({ leaderboard }) {
             defaultSort: 'asc'
         },
         {
-            title: 'pays',
+            title: 'Pays',
             field: 'Country'
         },
         {
