@@ -1,6 +1,6 @@
 const fetch = require('isomorphic-fetch');
 const Dropbox = require('dropbox').Dropbox;
-let dbx = new Dropbox({accessToken:"sl.BYVTHLjFPldOzj1PPoThisFbQIlD4Mo5hJ-XFWYioctFdcuKLrd5Klo_0NLJ7ekCoYnMl0hE4o14WNNhEpbEuOdKg99eyfcRmHec4YeEzZJxDxs56HlZFvKbN7epwomeTrcMDoa65cIt" process.env.dropToken, fetch: fetch});
+let dbx = new Dropbox({accessToken:"sl.BYVTHLjFPldOzj1PPoThisFbQIlD4Mo5hJ-XFWYioctFdcuKLrd5Klo_0NLJ7ekCoYnMl0hE4o14WNNhEpbEuOdKg99eyfcRmHec4YeEzZJxDxs56HlZFvKbN7epwomeTrcMDoa65cIt" , fetch: fetch});
 
 exports.handler = async function(event, context) {
     try {
