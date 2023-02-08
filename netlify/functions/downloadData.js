@@ -12,7 +12,6 @@ exports.handler = async function(event, context) {
                 message: "Dropbox error"
             }
         }
-
         const data = JSON.parse(response.result.fileBinary);
 
         return {
